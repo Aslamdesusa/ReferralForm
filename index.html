@@ -10,6 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="img/favicon.png" />
 </head>
+<script>
+	
+	$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#clonebaby").clone().appendTo("#newclone");
+        document.getElementById("newclone").style.margin = "30px 0px 0px 0px";
+    });
+});
+</script>
 <body>
 	<img class="img-responsive" src="img/logo.png">
 
@@ -22,7 +31,7 @@
 	<h2>Student Details</h2>
 	<p>Details of the student you are referring.</p>
 
-	<div class="baby_container">
+	<div id="clonebaby" class="baby_container">
 	<div class="baby_cont1">
 		<h4>Name</h4>
 		<input class="inp" type="text" name="input" required>
@@ -37,8 +46,11 @@
 		<input class="inp" type="number" name="input" required>
 	</div>	
 	</div>
+	<div id="newclone">
+		
+	</div>
 	<div align="right">
-		<input class="btnBottom1" type="button" name="button" value="Add Another Student's Details">	
+		<input id="btn" class="btnBottom1" type="button" name="button" value="Add Another Student's Details">	
 	</div>
 
 
