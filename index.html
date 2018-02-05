@@ -11,13 +11,16 @@
 	<link rel="shortcut icon" href="img/favicon.png" />
 </head>
 <script>
-	
+	var i = 1;
 	$(document).ready(function(){
     $("#btn").click(function(){
-        $("#clonebaby").clone().appendTo("#newclone");
+        document.getElementById('tagh2').innerHTML = "Student "+ ++i +" Details"
+        $("#main").clone().appendTo("#newclone");
         document.getElementById("newclone").style.margin = "30px 0px 0px 0px";
+        document.getElementById('tagh2').innerHTML = "Student 1 Details"
     });
 });
+
 </script>
 <body>
 	<img class="img-responsive" src="img/logo.png">
@@ -27,14 +30,14 @@
 	<h1>Refer a Student to NavGurukul :)</h1>
 	<p class="cen">Someone from NavGurukul will reach out to every student you refer<br> and arrange an interview for them.</p>
 	<p class="cen">Thanks :)</p>
-
-	<h2>Student Details</h2>
+	<div id="main">
+	<h2 id="tagh2">Student Details</h2>
 	<p>Details of the student you are referring.</p>
 
 	<div id="clonebaby" class="baby_container">
 	<div class="baby_cont1">
 		<h4>Name</h4>
-		<input class="inp" type="text" name="input" required>
+		<input id="name" class="inp" type="text" name="input" required>
 	</div>
 	<div class="baby_cont1">
 		<h4>Mobile Number</h4>
@@ -45,6 +48,7 @@
 		<h4>Confirm Mobile</h4>
 		<input class="inp" type="number" name="input" required>
 	</div>	
+	</div>
 	</div>
 	<div id="newclone">
 		
@@ -72,7 +76,7 @@
 		<input class="inp" type="mail" name="input" required>
 	</div>
 	</div>
-	<a style="text-decoration: none;" href="index1.html" ><b><input class="btnBottom" type="button" value="Submit Details"><b></a>
+	<a id="sbmt" style="text-decoration: none;" href="index1.html" ><b><input class="btnBottom" type="button" value="Submit Details"><b></a>
 </div>
 </div>
 </body>
