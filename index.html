@@ -8,76 +8,61 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="referral.js"></script>
 	<link rel="shortcut icon" href="img/favicon.png" />
 </head>
-<script>
-	var i = 1;
-	$(document).ready(function(){
-    $("#btn").click(function(){
-        document.getElementById('tagh2').innerHTML = "Student "+ ++i +" Details"
-        $("#main").clone().appendTo("#newclone");
-        document.getElementById("newclone").style.margin = "30px 0px 0px 0px";
-        document.getElementById('tagh2').innerHTML = "Student 1 Details"
-    });
-});
-
-</script>
 <body>
 	<img class="img-responsive" src="img/logo.png">
-
 	<div class="main_container">
-	<div class="baby_container0">
-	<h1>Refer a Student to NavGurukul :)</h1>
-	<p class="cen">Someone from NavGurukul will reach out to every student you refer<br> and arrange an interview for them.</p>
-	<p class="cen">Thanks :)</p>
-	<div id="main">
-	<h2 id="tagh2">Student Details</h2>
-	<p>Details of the student you are referring.</p>
+		<div class="baby_container0">
+			<h1>Refer a Student to NavGurukul :)</h1>
+			<p class="cen">Someone from NavGurukul will reach out to every student you refer<br> and arrange an interview for them.</p>
+			<p class="cen">Thanks :)</p>
+			<div id="main">
+				<h2 id="tagh2">Student Details</h2>
+				<p>Details of the student you are referring.</p>
 
-	<div id="clonebaby" class="baby_container">
-	<div class="baby_cont1">
-		<h4>Name</h4>
-		<input id="name" class="inp" type="text" name="input" required>
-	</div>
-	<div class="baby_cont1">
-		<h4>Mobile Number</h4>
-		<input class="inp" type="number" name="input" required>
-	</div>
+				<div id="clonebaby" class="baby_container">
+					<div class="baby_cont1">
+						<h4>Name</h4>
+						<input id="name1" class="inp" type="text" name="input" required>
+					</div>
+					<div class="baby_cont1">
+						<h4>Mobile Number</h4>
+						<input id="num1" class="inp" type="number" name="input" required>
+					</div>
 
-	<div class="baby_cont1">
-		<h4>Confirm Mobile</h4>
-		<input class="inp" type="number" name="input" required>
-	</div>	
-	</div>
-	</div>
-	<div id="newclone">
-		
-	</div>
-	<div align="right">
-		<button id="btn" type="button" class="btn btn-primary">Add Another Student's Details</button>
-	</div>
+					<div class="baby_cont1">
+						<h4>Confirm Mobile</h4>
+						<input id="num2" class="inp" type="number" name="input" required>
+					</div>
+				</div>
+			</div>
+			<div id="newclone">
+				
+			</div>
+			<div align="right">
+				<button id="btn" type="button" class="btn btn-primary">Add Another Student's Details</button>
+			</div>
+			<h2>Your Details</h2>
+			<p>We'll keep you updated (on eMail) about our interaction with the students.</p>
 
-
-	<h2>Your Details</h2>
-	<p>We'll keep you updated (on eMail) about our interaction with the students.</p>
-
-	<div class="baby_container">
-	<div class="baby_cont1">
-		<h4>Name</h4>
-		<input class="inp" type="text" name="input" required>
+			<div class="baby_container">
+				<div class="baby_cont1">
+					<h4>Name</h4>
+					<input id="hello" class="inp" type="text" name="input" required>
+				</div>
+				<div class="baby_cont1">
+					<h4>Mobile Number</h4>
+					<input id="num" class="inp" type="number" name="input" required>
+				</div>
+				<div class="baby_cont1">
+					<h4>eMail</h4>
+					<input id="em" class="inp" type="text" name="input" required>
+				</div>
+			</div>
+			<button id="btnbottom" type="button" class="btn btn-success">Submit Details</button>
+		</div>
 	</div>
-	<div class="baby_cont1">
-		<h4>Mobile Number</h4>
-		<input class="inp" type="number" name="input" required>
-	</div>
-
-	<div class="baby_cont1">
-		<h4>eMail</h4>
-		<input class="inp" type="mail" name="input" required>
-	</div>
-	</div>
-		<a id="sbmt" href="index1.html"><button id="btnbottom" type="button" class="btn btn-success">Submit Details</button></a>
-</div>
-</div>
 </body>
 </html>
