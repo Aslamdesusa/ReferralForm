@@ -4,7 +4,6 @@ body{
 	padding: 0;
 	margin: 20px;
 	font-family: sans-serif;
-
 }
 
 .main_container{
@@ -35,25 +34,12 @@ img{
 	margin-right: auto;
 	width: 300px;
 }
-.btnBottom1{
-	background-color: #2897f3;
-	color: white;
-	box-sizing: border-box;
-	display: block;
-	width: 250px;
-	border-width: 1px;
-	padding: 7px;
-	outline: 0;
-	margin-top: 8px;
+#btn{
+	margin-top: 20px;
 }
-.btnBottom{
-	background-color: #4ea04f;
-	font-size: 20px;
-	color: rgb(245, 245, 245);
-	box-sizing: border-box;
-	display: block;
+#btnbottom{
+	font-size: 150%;
 	width: 100%;
-	border-width: 1px;
 	padding: 16px;
 	outline: 0;
 	margin-top: 20px;
@@ -103,4 +89,7 @@ p{
 }
 .cen{
 	text-align: center;
+}
+#sbmt{
+	text-decoration: none;
 }
