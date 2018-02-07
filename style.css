@@ -44,6 +44,9 @@ img{
 	outline: 0;
 	margin-top: 20px;
 }
+.bottomhadder{
+	margin-top: 100px;
+}
 .baby_container{
 	padding: 16px;
 	background-color: #ddd;
@@ -58,7 +61,7 @@ img{
 	border-width: 1px;
 	padding: 15px;
 	outline: 0;
-	margin-top: 100px;
+	margin-top: 20px;
 }
 .headding25{
 	font-family: ubuntu;
